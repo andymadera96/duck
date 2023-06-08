@@ -1,14 +1,6 @@
+from ducks import Duck
 
-def main():
-    print("Main")
-    
-def quack():
-    print("Quack")
+if __name__ == "__main__":
+    hernry = Duck("Hernry", 6.0, "Yellow", "Male")
 
-def donkey():
-    print("Weesnaw")   
-
-if __name__ == "__name__":
-    main()
-
-
+    hernry.displayInfo()
