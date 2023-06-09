@@ -8,7 +8,7 @@ class Duck:
         self.color = color
         self.sex = sex
         self.isAlive = True
-        
+
     def quack(self):
         print("Quack")
 
@@ -17,6 +17,12 @@ class Duck:
 
     def eat(self):
         self.weight += 1
+    
+    def die(self):
+        self.isAlive = False
+
+    def live(self):
+        self.isAlive = True
     
     def displayInfo(self):
         print(self.name)
