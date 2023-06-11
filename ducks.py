@@ -1,8 +1,8 @@
-class Duck: 
+class Duck:
 
-    #the __init__  is the Constructor (it builds our objects)
-    def __init__(self, name, weight, color, sex): #Arguments we are passing to duck class to initalize their atrributes
-        #These are the attributes to the Duck Objects
+    #the __init__ is the Constructor( it build the duck essentially)
+    def __init__(self, name, weight, color, sex):#Arguments we are passing to the duck class to initialize their attributes
+        #These are the attributes to the Duck objects
         self.name = name
         self.weight = weight
         self.color = color
@@ -17,8 +17,14 @@ class Duck:
 
     def eat(self):
         self.weight += 1
+    
+    def die(self):
+        self.isAlive = False
 
-    def displaysInfo(self):
+    def live(self):
+        self.isAlive = True
+    
+    def displayInfo(self):
         print(self.name)
         print(self.weight)
         print(self.color)
