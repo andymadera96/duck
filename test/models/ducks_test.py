@@ -33,6 +33,33 @@ class DuckTest(unittest.TestCase):
 
         self.assertNotEqual(expected, actual)
 
+    def test_die_method_alive(self):
+        testDuck1 = ducks.Duck(self.testName, self.testWeight, self.testColor, self.testsex)
+
+        self.assertTrue(testDuck1.isAlive)
+
+    def test_die_method_dead(self):
+        testDuck1 = ducks.Duck(self.testName, self.testWeight, self.testColor, self.testsex)
+        testDuck1.die()
+
+        self.assertFalse(testDuck1.isAlive)
+
+
+    def test_revive_method_alive(self):
+        testDuck1 = ducks.Duck(self.testName, self.testWeight, self.testColor, self.testsex)
+        testDuck1.die()
+        testDuck1.live()
+
+        self.assertTrue(testDuck1.isAlive)
+
+    def test_revive_method_alive2(self):
+        testDuck1 = ducks.Duck(self.testName, self.testWeight, self.testColor, self.testsex)
+        testDuck1.live()
+
+        self.assertTrue(testDuck1.isAlive)
+
+    
+
     
     
 
