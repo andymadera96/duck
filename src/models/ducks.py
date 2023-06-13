@@ -30,5 +30,3 @@ class Duck:
         print(self.color)
         print(self.sex)
         print(self.isAlive)
-
-
